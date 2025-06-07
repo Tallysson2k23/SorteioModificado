@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sorteio de Nomes - Rede.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <h1>🎲 Sorteio de Nomes 🎲</h1>
+
+    <div id="contadorSelecao">Selecionados:</div>
+
+    <div id="listaNomes">
+        <form id="formNomes"></form>
+    </div>
+
+    <button id="botaoSortear" onclick="sortear()">Sortear</button>
+    <button id="botaoSelecionarTudo" onclick="selecionarTudo()">Selecionar Tudo</button>
+
+
+
+    <!-- Modal de Resultado -->
+    <div id="modalResultado" class="modal-fundo">
+        <div class="modal-conteudo">
+            <h2 id="modalTitulo">Sorteando...</h2>
+            <p id="nomeVencedor"></p>
+            <p id="contador"></p>
+            <button id="botaoFechar" class="modal-botao" onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div id="modalConfirmacao" class="modal-fundo">
+        <div class="modal-conteudo">
+            <h2>Confirmar sorteio</h2>
+            <p>Os seguintes nomes estão selecionados:</p>
+            <ul id="listaConfirmacao"></ul>
+            <button id="confirmarSortear">Sortear</button>
+            <button id="cancelarSortear">Cancelar</button>
+           <button id="botaoSalvarTxt">Copiar selecionados</button>
+
+        </div>
+
+        
+    </div>
+
+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
